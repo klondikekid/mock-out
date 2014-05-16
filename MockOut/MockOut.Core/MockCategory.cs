@@ -1,0 +1,29 @@
+﻿namespace MockOut.Core
+{
+    public enum MockCategory
+    {
+        FirstName,
+        LastName,
+        FullName,
+        AddressLine,
+        City,
+        StateAbbr,
+        StateName,
+        ZipCode,
+        ZipCodeString,
+        CountryAbbr,
+        CountryName,
+        Directional,
+        ProductName,
+        ProductCategory,
+        LowPrice,
+        MediumPrice,
+        HighPrice,
+        LowDiscount,
+        MediumDiscount,
+        HighDiscount,
+        LoremIpsum,
+        Color,
+        Severity
+    }
+}
