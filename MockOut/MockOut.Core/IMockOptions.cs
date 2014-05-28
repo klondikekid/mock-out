@@ -1,4 +1,29 @@
-﻿using System;
+﻿#region License
+// Copyright (c) 2014 John Robinson
+//
+// Permission is hereby granted, free of charge, to any person
+// obtaining a copy of this software and associated documentation
+// files (the "Software"), to deal in the Software without
+// restriction, including without limitation the rights to use,
+// copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the
+// Software is furnished to do so, subject to the following
+// conditions:
+//
+// The above copyright notice and this permission notice shall be
+// included in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+// OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+// NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+// HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+// WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+// OTHER DEALINGS IN THE SOFTWARE.
+#endregion
+
+using System;
 
 namespace MockOut.Core
 {
@@ -6,17 +31,13 @@ namespace MockOut.Core
     {
         void Quantity(int number);
 
-        void MapField(string name, MockCategory category);
+        void Map(string name, string category);
 
-        void UseCategory(MockCategory category);
+        void Define<T>(string fieldName, Func<dynamic, T> factory);
 
-        void DefineField<T>(string fieldName, Func<dynamic, T> factory);
-
-        void Intercept<T>(Action<T> fn);
+        void Returns<T>(Func<T, dynamic> factory);
 
         void AsJson(Action<string> action);
-
-        void AsJson(JsonStream jsonStream);
 
         void asXml(Action<string> action);
     }

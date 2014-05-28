@@ -46,21 +46,31 @@
     <Compile Include="BaseMockingStrategy.cs" />
     <Compile Include="FieldDefinition.cs" />
     <Compile Include="FieldMap.cs" />
+    <Compile Include="IMockDataStore.cs" />
     <Compile Include="IMockingStrategy.cs" />
     <Compile Include="JsonFormat.cs" />
     <Compile Include="JsonStream.cs" />
-    <Compile Include="MockCategory.cs" />
+    <Compile Include="JsonUtilities.cs" />
+    <None Include="App_Start\MockCategories.cs.pp" />
+    <None Include="App_Start\Mocked.cs.pp" />
     <Compile Include="MockedFieldAttribute.cs" />
     <Compile Include="MockExtensions.cs" />
     <Compile Include="IMockOptions.cs" />
     <Compile Include="Mock.cs" />
+    <Compile Include="NumberGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Random.cs" />
-    <Compile Include="RandomMockingStrategy.cs" />
+    <None Include="App_Start\Mocks.cs.pp" />
+    <Compile Include="CoreMockingStrategy.cs" />
+    <Compile Include="Proxy\DynamicAssemblyBuilder.cs" />
+    <Compile Include="Proxy\DynamicCache.cs" />
+    <Compile Include="Proxy\DynamicModuleBuilder.cs" />
+    <Compile Include="XmlStream.cs" />
+    <Compile Include="XmlUtilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

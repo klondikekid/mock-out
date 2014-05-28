@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockOut.Core", "MockOut.Core\MockOut.Core.csproj", "{64F31B6B-2DCC-4DC3-B6E8-3B7FABC7AA02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockOut.Api", "MockOut.Api\MockOut.Api.csproj", "{D54BB9AA-89E0-4CFA-AD1D-406F6E77F4D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockOut.Proxy", "MockOut.Proxy\MockOut.Proxy.csproj", "{241D951D-AFDC-41BD-85D8-8E7BD6EE0EDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{64F31B6B-2DCC-4DC3-B6E8-3B7FABC7AA02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64F31B6B-2DCC-4DC3-B6E8-3B7FABC7AA02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64F31B6B-2DCC-4DC3-B6E8-3B7FABC7AA02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54BB9AA-89E0-4CFA-AD1D-406F6E77F4D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54BB9AA-89E0-4CFA-AD1D-406F6E77F4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54BB9AA-89E0-4CFA-AD1D-406F6E77F4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54BB9AA-89E0-4CFA-AD1D-406F6E77F4D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{241D951D-AFDC-41BD-85D8-8E7BD6EE0EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{241D951D-AFDC-41BD-85D8-8E7BD6EE0EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{241D951D-AFDC-41BD-85D8-8E7BD6EE0EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{241D951D-AFDC-41BD-85D8-8E7BD6EE0EDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
